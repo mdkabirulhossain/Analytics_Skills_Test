@@ -19,11 +19,11 @@
     </ul>
     <ul>
       <li class="Logo">Logo</li>
-      <li class="hideOnMobile"><a href="#">HOME</a></li>
-      <li class="hideOnMobile"><a href="#">ABOUT</a></li>
-      <li class="hideOnMobile"><a href="#">SERVICES</a></li>
-      <li class="hideOnMobile"><a href="#">CONTACT</a></li>
-      <li class="hideOnMobile"><a href="#">CAREER</a></li>
+      <li class="hide"><a href="#">HOME</a></li>
+      <li class="hide"><a href="#">ABOUT</a></li>
+      <li class="hide"><a href="#">SERVICES</a></li>
+      <li class="hide"><a href="#">CONTACT</a></li>
+      <li class="hide"><a href="#">CAREER</a></li>
       <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars" style="color: #e45f07;"></i></a></li>
     </ul>
   </nav>
