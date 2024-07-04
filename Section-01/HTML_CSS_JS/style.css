@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Logo{
+  color: #fff;
+  font-size: larger;
+  font-weight: bold;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+nav{
+  background-color:#000;
+  
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position:fixed;
+  top: 0; 
+  right: 0;
+  height: 300px;
+  width: 100%;
+  background-color: #000;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
+
+/* Main section css start from here  */
+
+.main{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #000;
+}
+.slider-wrapper{
+  overflow: hidden;
+  /* max-width: 1200px;
+  margin: 0 70px 50px; */
+}
+.card-list .card-item .user-image{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  border: 3px solid #fff;
+  padding: 4px;
+}
+.card-list .card-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  /* width: 400px; */
+  user-select: none;
+  padding: 35px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+}
+.card-list .card-item .user-profession{
+  font-size: 1.15erm;
+  color: #fff;
+  font-weight: 400;
+  margin: 8px 0 20px;
+
+}
+.card-list .card-item .message-button{
+  font-size: 1.25erm;
+  padding: 10px 30px;
+  color: #000;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+}
+.card-list .card-item .message-button:hover{
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  color: #fff;
+}
+.slider-wrapper .swiper-pagination-bullet{
+  background: #fff;
+  height: 15px;
+  width: 15px;
+}
+.swiper-button{
+  color: #fff;
+}
+
+/* Footer start from here  */
+.footer{
+ display: grid;
+ height: 200px;
+ gap: 10px;
+ grid-template-columns: repeat(4, 1fr);
+ align-items: center;
+ margin: 10px;
+ padding: 10px;
+}
+
+.footer p{
+  font-weight: bolder;
+}
+.footer h1{
+  font-size: large;
+  font-weight: bolder;
+}
+/* responsive start from here  */
+@media(max-width: 992px){
+  .hide{
+    display: none;
+  }
+  nav li{
+    height: 30px;
+  }
+  .menu-button{
+    display: block;
+  }
+  .footer{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 600px){
+  .slider-wrapper{
+    margin: 0 10px 45px;
+  }
+  .swiper-button{
+    display: none;
+  }
+}
