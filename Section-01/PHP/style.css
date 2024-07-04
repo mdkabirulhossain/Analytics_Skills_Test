@@ -1,0 +1,64 @@
+
+.form{
+    margin: 30px 80px;
+}
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+    color: orangered;
+    text-align: center;
+}
+.confirm{
+    color: green;
+    text-align: center;
+}
+input {
+    width: 100%;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+input[type=email]:focus {
+    border: 3px solid #555;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+
+ button{
+    background-color: orangered;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  @media(min-width: 992px){
+    .form{
+        margin: 30px 200px;
+    }
+  }
